@@ -1,29 +1,9 @@
 //
-// Created by Pierre-Samuel Rochat on 08.05.17.
+// Created by Gallouche on 19/05/2017.
 //
 
-#ifndef POO2_LABO16_CONTROLLER_H
-#define POO2_LABO16_CONTROLLER_H
+#include "Controller.hpp"
 
-#include <iostream>
-
-#include "Bank.h"
-#include "Boat.h"
-
-using namespace std;
-
-class Controller {
-private:
-    int turn;
-    Bank* leftBank = new Bank();
-    Bank* rightBank = new Bank();
-    Boat* boat = new Boat();
-
-public:
-    void showMenu();
-    void display();
-    void nextTurn();
-};
 
 void Controller::showMenu() {
     cout << "p      : afficher"        << endl;
@@ -50,6 +30,3 @@ void Controller::display() {
     (*rightBank).displayPersons();
     cout << "----------------------------------------------------------" << endl;
 }
-
-
-#endif //POO2_LABO16_CONTROLLER_H
