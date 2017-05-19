@@ -5,8 +5,8 @@
 #include "Boat.hpp"
 
 
-Boat::Boat(): position(Boat::Side::LEFT) {}
+Boat::Boat(): position(Side::LEFT) {}
 
-Boat::Side Boat::getPosition() {
+Side Boat::getPosition() {
     return position;
 }

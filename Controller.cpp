@@ -20,10 +20,10 @@ void Controller::display() {
     cout << "Gauche: ";
     (*leftBank).displayPersons();
     cout << "----------------------------------------------------------" << endl;
-    if((*boat).getPosition() == Boat::Side::LEFT)  { (*boat).displayPersons(); }
+    if((*boat).getPosition() == Side::LEFT)  { (*boat).displayPersons(); }
     cout << endl;
     cout << "==========================================================" << endl;
-    if((*boat).getPosition() == Boat::Side::RIGHT) { (*boat).displayPersons(); }
+    if((*boat).getPosition() == Side::RIGHT) { (*boat).displayPersons(); }
     cout << endl;
     cout << "----------------------------------------------------------" << endl;
     cout << "Droite: ";

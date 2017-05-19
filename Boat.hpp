@@ -7,6 +7,7 @@
 
 
 #include "Container.hpp"
+#include "Side.hpp"
 
 class Boat: public Container {
 private:
@@ -15,7 +16,6 @@ private:
 public:
     Boat();
     ~Boat();
-    enum class Side { RIGHT, LEFT };
     Side getPosition();
 };
 
