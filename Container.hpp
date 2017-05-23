@@ -18,12 +18,12 @@ protected:
     string name;
     list<Person> l;
 public:
-    Container();
+    Container(string name);
     ~Container();
 
     void addPerson(Person p);
     void removePerson(Person p);
-    void displayPersons();
+    virtual void displayPersons();
 };
 
 

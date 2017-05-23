@@ -15,6 +15,9 @@ private:
     string name;
     bool drive;
 public:
+    Person(string name);
+    Person(string name, bool canDrive);
+    ~Person(){}
     bool canDrive();
     string getName();
     friend bool operator == (const Person& lhs, const Person& rhs);

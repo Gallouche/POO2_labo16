@@ -8,20 +8,24 @@
 
 
 #include <iostream>
+#include <list>
+#include <string>
 
 #include "Bank.hpp"
 #include "Boat.hpp"
+#include "Person.hpp"
 
 using namespace std;
 
 class Controller {
 private:
     int turn;
-    Bank* leftBank = new Bank();
-    Bank* rightBank = new Bank();
-    Boat* boat = new Boat();
+    Bank* leftBank;
+    Bank* rightBank;
+    Boat* boat;
 
 public:
+    Controller(initializer_list<Person*> p);
     void showMenu();
     void display();
     void nextTurn();

@@ -4,8 +4,7 @@
 
 #include "Container.hpp"
 
-
-Container::Container() {}
+Container::Container(string name): name(name) {}
 
 Container::~Container() {}
 
@@ -21,3 +20,4 @@ void Container::displayPersons() {
         cout << (*it).getName() << " ";
     cout << endl;
 }
+

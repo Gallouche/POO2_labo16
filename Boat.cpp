@@ -5,8 +5,22 @@
 #include "Boat.hpp"
 
 
-Boat::Boat(): position(Side::LEFT) {}
+Boat::Boat(string name): Container(name), side(Side::LEFT) {}
 
-Side Boat::getPosition() {
-    return position;
+Side Boat::getSide(){
+    return side;
+}
+
+void Boat::changeSide() {
+    if(side == Side::RIGHT)
+        side = Side::LEFT;
+    else
+        side = Side::RIGHT;
+}
+
+void Boat::displayPersons() {
+    cout << "< ";
+    for (list<Person>::iterator it = l.begin(); it != l.end(); it++)
+        cout <<  (*it).getName() << " ";
+    cout << ">" << endl;
 }

@@ -11,12 +11,14 @@
 
 class Boat: public Container {
 private:
-    Side position;
+    Side side;
 
 public:
-    Boat();
+    Boat(string name);
     ~Boat();
-    Side getPosition();
+    Side getSide();
+    void changeSide();
+    void displayPersons();
 };
 
 
