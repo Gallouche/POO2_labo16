@@ -46,12 +46,29 @@ void Controller::nextTurn() {
     }
 
     cout << turn << ">";
-    string move, param;
+    char move
+    string param;
     cin >> move;
-    cin >> param;
 
     switch (move){
-
+        case 'p':
+            break;
+        case 'e':
+            break;
+        case 'd':
+            break;
+        case 'm':
+            boat->changeSide();
+            break;
+        case 'r':
+            break;
+        case 'q':
+            return;
+        case 'h':
+            showMenu();
+            break;
+        default:
+            cout << "Commande inconnu !" << endl;
     }
 }
 
