@@ -17,8 +17,11 @@ public:
     Boat(string name);
     ~Boat();
     Side getSide();
+    void setSide(Side newSide);
     void changeSide();
     void displayPersons();
+    void embarquer(string person);
+    void debarquer(string person);
 };
 
 

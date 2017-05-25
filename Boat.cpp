@@ -11,6 +11,10 @@ Side Boat::getSide(){
     return side;
 }
 
+void Boat::setSide(Side newSide) {
+    side = newSide;
+}
+
 void Boat::changeSide() {
     if(side == Side::RIGHT)
         side = Side::LEFT;
@@ -20,7 +24,15 @@ void Boat::changeSide() {
 
 void Boat::displayPersons() {
     cout << "< ";
-    for (list<Person>::iterator it = l.begin(); it != l.end(); it++)
-        cout <<  (*it).getName() << " ";
+    for (list<Person*>::iterator it = l.begin(); it != l.end(); it++)
+        cout <<  (**it).getName() << " ";
     cout << ">" << endl;
+}
+
+void Boat::embarquer(string person) {
+
+}
+
+void Boat::debarquer(string person) {
+
 }

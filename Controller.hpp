@@ -19,16 +19,19 @@ using namespace std;
 
 class Controller {
 private:
+    Bank* listInit;
     int turn;
     Bank* leftBank;
     Bank* rightBank;
     Boat* boat;
+    bool finished;
 
 public:
     Controller(initializer_list<Person*> p);
     void showMenu();
     void display();
     void nextTurn();
+    void run();
 };
 
 

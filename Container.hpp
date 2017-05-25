@@ -16,14 +16,15 @@ using namespace std;
 class Container {
 protected:
     string name;
-    list<Person> l;
+    list<Person*> l;
 public:
     Container(string name);
     ~Container();
 
-    void addPerson(Person p);
-    void removePerson(Person p);
+    void addPerson(Person* p);
+    void removePerson(Person* p);
     virtual void displayPersons();
+    void clear();
 };
 
 

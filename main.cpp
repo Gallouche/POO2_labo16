@@ -7,6 +7,6 @@ int main() {
     Person maman("maman");
 
     Controller c({&papa,&maman});
-    c.nextTurn();
+    c.run();
     return EXIT_SUCCESS;
 }
