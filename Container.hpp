@@ -24,7 +24,7 @@ public:
      */
     Container(string name);
 
-    
+
     virtual ~Container();
     void addPerson(Person* p);
     void removePerson(Person* p);
