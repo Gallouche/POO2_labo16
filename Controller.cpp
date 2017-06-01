@@ -58,7 +58,7 @@ void Controller::nextTurn() {
             display();
             break;
         case 'e':
-            cin >> person
+            cin >> person;
             for (list<Person*>::iterator it = l.begin(); it != l.end(); it++){
 
             }
