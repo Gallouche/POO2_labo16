@@ -9,9 +9,9 @@ Controller::Controller(initializer_list<Person*> p):
         ended(false)
 {
     listInit = list<Person*>();
-    leftBank = new Bank("left");
-    rightBank = new Bank("right");
-    boat = new Boat("boat");
+    leftBank = new Bank("Gauche");
+    rightBank = new Bank("Droite");
+    boat = new Boat("Bateau");
     boat->setSide(leftBank);
     for(initializer_list<Person*>::iterator it = p.begin(); it != p.end(); it++){
         leftBank->addPerson(*it);
@@ -31,16 +31,22 @@ void Controller::showMenu() {
 
 void Controller::display() {
     cout << "----------------------------------------------------------" << endl;
-    cout << "Gauche: ";
+    cout << leftBank->getName() << ": ";
     (*leftBank).displayPersons();
     cout << "----------------------------------------------------------" << endl;
-    if(boat->getSide() == leftBank)  { boat->displayPersons();}
+    if(boat->getSide() == leftBank)  {
+        cout << boat->getName() << ": ";
+        boat->displayPersons();
+    }
     else cout << endl;
     cout << "==========================================================" << endl;
-    if(boat->getSide() == rightBank) { boat->displayPersons(); }
+    if(boat->getSide() == rightBank) {
+        cout << boat->getName() << ": ";
+        boat->displayPersons();
+    }
     else cout << endl;
     cout << "----------------------------------------------------------" << endl;
-    cout << "Droite: ";
+    cout << rightBank->getName() << ": ";
     (*rightBank).displayPersons();
     cout << "----------------------------------------------------------" << endl;
 }
@@ -67,22 +73,24 @@ void Controller::nextTurn() {
         }
     }
 
-
-
     switch (move){
         case 'p':
+            showMenu();
             display();
             break;
         case 'e':
             embarquer(currentPerson);
+            showMenu();
             display();
             break;
         case 'd':
             debarquer(currentPerson);
+            showMenu();
             display();
             break;
         case 'm':
             moveBoat();
+            showMenu();
             display();
             break;
         case 'r':
