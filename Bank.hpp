@@ -9,6 +9,10 @@
 
 class Bank: public Container {
 public:
+    /**
+     * Bank constructor
+     * @param name the name of the container
+     */
     Bank(const string &name);
 public:
 };

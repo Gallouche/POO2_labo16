@@ -38,3 +38,7 @@ int Container::getSize() {
     return l.size();
 }
 
+string Container::getName() {
+    return name;
+}
+

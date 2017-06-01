@@ -14,9 +14,27 @@ private:
     Bank* side;
 
 public:
+    /**
+     * Boat constructor
+     * @param name the name of the container
+     */
     Boat(string name);
+
+    /**
+     * Gets boat's current river side
+     * @return the bank where the boat is
+     */
     Bank* getSide();
+
+    /**
+     * Sets the boat's current bank
+     * @param newSide the new bank where the boat will be
+     */
     void setSide(Bank* newSide);
+
+    /**
+     * Displays the people that are currently in the boat
+     */
     void displayPersons();
 };
 

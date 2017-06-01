@@ -15,7 +15,6 @@ void Boat::setSide(Bank* newSide) {
     side = newSide;
 }
 
-
 void Boat::displayPersons() {
     cout << "< ";
     for (list<Person*>::iterator it = l.begin(); it != l.end(); it++)
