@@ -7,21 +7,17 @@
 
 
 #include "Container.hpp"
-#include "Side.hpp"
+#include "Bank.hpp"
 
 class Boat: public Container {
 private:
-    Side side;
+    Bank* side;
 
 public:
     Boat(string name);
-    ~Boat();
-    Side getSide();
-    void setSide(Side newSide);
-    void changeSide();
+    Bank* getSide();
+    void setSide(Bank* newSide);
     void displayPersons();
-    void embarquer(string person);
-    void debarquer(string person);
 };
 
 

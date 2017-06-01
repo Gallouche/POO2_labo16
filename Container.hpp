@@ -19,12 +19,14 @@ protected:
     list<Person*> l;
 public:
     Container(string name);
-    ~Container();
+    virtual ~Container();
 
     void addPerson(Person* p);
     void removePerson(Person* p);
+    bool contain(Person* p);
     virtual void displayPersons();
     void clear();
+    int getSize();
 };
 
 

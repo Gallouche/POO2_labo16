@@ -25,3 +25,16 @@ void Container::clear() {
     l.clear();
 }
 
+bool Container::contain(Person* p) {
+    for (list<Person*>::iterator it = l.begin(); it != l.end(); it++){
+        if(*it == p){
+            return true;
+        }
+    }
+    return false;
+}
+
+int Container::getSize() {
+    return l.size();
+}
+

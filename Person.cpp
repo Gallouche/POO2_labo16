@@ -18,10 +18,6 @@ bool operator==(const Person &lhs, const Person &rhs) {
     return lhs.name == rhs.name;
 }
 
-bool operator == (const Person& lhs, const string& rhs){
-    return  lhs.name == rhs;
-}
-
 bool Person::canDrive() {
     return drive;
 }
