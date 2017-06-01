@@ -10,6 +10,7 @@
 #include <iostream>
 #include <list>
 #include <string>
+#include <regex>
 
 #include "Bank.hpp"
 #include "Boat.hpp"
@@ -25,17 +26,21 @@ private:
     Bank* rightBank;
     Boat* boat;
     bool ended;
-public:
-    Controller(initializer_list<Person*> p);
+
     void showMenu();
     void display();
     void nextTurn();
-    void run();
     void embarquer(Person* p);
     void debarquer(Person* p);
     void moveBoat();
     Person* getPersonByName(string name);
     bool finished();
+    void reInit();
+    bool checkCommand(const string &toParse, char &move, string &person);
+public:
+    Controller(initializer_list<Person*> p);
+    void run();
+
 };
 
 

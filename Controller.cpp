@@ -53,21 +53,19 @@ void Controller::nextTurn() {
 
     cout << turn << ">";
     turn++;
+
     char move;
     string person;
-    string str;
-    getline(cin,str);
-    move = str.at(0);
+    string toParse;
+    getline(cin,toParse);
     Person* currentPerson;
-    if(str.size() > 1){
-        person = str.substr(2);
-         currentPerson = getPersonByName(person);
-        if(!currentPerson){
-            return;
-        }
+
+    bool valid = checkCommand(toParse, move, person);
+    currentPerson = getPersonByName(person);
+    if((!currentPerson && toParse.size() > 2) || !valid) {
+        cout << "Commande ou personne invalide !" << endl;
+        return;
     }
-
-
 
     switch (move){
         case 'p':
@@ -86,15 +84,7 @@ void Controller::nextTurn() {
             display();
             break;
         case 'r':
-            turn = 0;
-            rightBank->clear();
-            leftBank->clear();
-            for(Person* p : listInit){
-                leftBank->addPerson(p);
-            }
-            boat->clear();
-            boat->setSide(leftBank);
-            cout << "Partie reinitialisee !" << endl << endl;
+            reInit();
             break;
         case 'q':
             cout << "Fin de la partie ! " << endl;
@@ -156,7 +146,6 @@ Person *Controller::getPersonByName(string name) {
             return p;
         }
     }
-    cout << "Personne inconnue !" << endl;
     return nullptr;
 }
 
@@ -164,4 +153,40 @@ bool Controller::finished() {
     return rightBank->getSize() == listInit.size();
 }
 
+void Controller::reInit() {
+    turn = 0;
+    rightBank->clear();
+    leftBank->clear();
+    for(Person* p : listInit){
+        leftBank->addPerson(p);
+    }
+    boat->clear();
+    boat->setSide(leftBank);
+    cout << "Partie reinitialisee !" << endl << endl;
+}
+
+bool Controller::checkCommand(const string &toParse, char &move, string &person) {
+    //regex r("([pedrmqh] [^\\s]+)|([pedrmqh])");
+//    if(regex_match(toParse,r)){
+//        move = toParse.at(0);
+//        person = toParse.substr(2);
+//        return true;
+//    }
+//    else{
+//        cout << "Commande invalide" << endl;
+//        return false;
+//    }
+
+    if(toParse.size() < 2){
+        move = toParse.at(0);
+        return true;
+    }
+    else if(toParse.at(1) == ' '){
+        move = toParse.at(0);
+        person = toParse.substr(2);
+        return true;
+    }
+    else
+        return false;
+}
 
