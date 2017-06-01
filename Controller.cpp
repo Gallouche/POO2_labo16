@@ -113,7 +113,10 @@ void Controller::run() {
 }
 
 void Controller::embarquer(Person *p) {
-    if(boat->contain(p))
+    if(boat->getSize() == 2){
+        cout << "Le bateau est plein !" << endl;
+    }
+    else if(boat->contain(p))
          cout << p->getName() << " est deja dans le bateau !" << endl;
     else if (!boat->getSide()->contain(p))
         cout << p->getName() << " n'est pas sur la berge !" << endl;
