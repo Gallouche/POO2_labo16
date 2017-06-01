@@ -6,7 +6,6 @@
 #define LABO16_BANK_HPP
 
 #include "Container.hpp"
-#include "Side.hpp"
 
 class Bank: public Container {
 public:

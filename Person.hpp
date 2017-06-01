@@ -22,7 +22,6 @@ public:
     string getName();
     friend bool operator == (const Person& lhs, const Person& rhs);
     friend bool operator == (const Person& lhs, const string& rhs);
-    void move(Container* from, Container* to);
 };
 
 

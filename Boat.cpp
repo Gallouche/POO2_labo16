@@ -5,22 +5,16 @@
 #include "Boat.hpp"
 
 
-Boat::Boat(string name): Container(name), side(Side::LEFT) {}
+Boat::Boat(string name): Container(name), side() {}
 
-Side Boat::getSide(){
+Bank* Boat::getSide(){
     return side;
 }
 
-void Boat::setSide(Side newSide) {
+void Boat::setSide(Bank* newSide) {
     side = newSide;
 }
 
-void Boat::changeSide() {
-    if(side == Side::RIGHT)
-        side = Side::LEFT;
-    else
-        side = Side::RIGHT;
-}
 
 void Boat::displayPersons() {
     cout << "< ";
@@ -34,5 +28,4 @@ void Boat::embarquer(string person) {
 }
 
 void Boat::debarquer(string person) {
-
 }

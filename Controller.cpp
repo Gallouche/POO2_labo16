@@ -4,17 +4,18 @@
 
 #include "Controller.hpp"
 
-Controller::Controller(initializer_list<Person *> p):
+Controller::Controller(initializer_list<Person*> p):
         turn(0),
-        finished(false)
+        ended(false)
 {
-    listInit = new Bank("initial");
+    listInit = list<Person*>();
     leftBank = new Bank("left");
     rightBank = new Bank("right");
     boat = new Boat("boat");
+    boat->setSide(leftBank);
     for(initializer_list<Person*>::iterator it = p.begin(); it != p.end(); it++){
         leftBank->addPerson(*it);
-        listInit->addPerson(*it);
+        listInit.push_back(*it);
     }
 }
 
@@ -33,9 +34,11 @@ void Controller::display() {
     cout << "Gauche: ";
     (*leftBank).displayPersons();
     cout << "----------------------------------------------------------" << endl;
-    if((*boat).getSide() == Side::LEFT)  { (*boat).displayPersons(); }
+    if(boat->getSide() == leftBank)  { boat->displayPersons();}
+    else cout << endl;
     cout << "==========================================================" << endl;
-    if((*boat).getSide() == Side::RIGHT) { (*boat).displayPersons(); }
+    if(boat->getSide() == rightBank) { boat->displayPersons(); }
+    else cout << endl;
     cout << "----------------------------------------------------------" << endl;
     cout << "Droite: ";
     (*rightBank).displayPersons();
@@ -59,24 +62,29 @@ void Controller::nextTurn() {
             break;
         case 'e':
             cin >> person;
+            embarquer(getPersonByName(person));
+            display();
             break;
         case 'd':
+            cin >> person;
+            debarquer(getPersonByName(person));
+            display();
             break;
         case 'm':
-            boat->changeSide();
+            moveBoat();
             display();
             break;
         case 'r':
             turn = -1;
-            leftBank = listInit;
+            //leftBank = listInit;
             rightBank->clear();
             boat->clear();
-            boat->setSide(Side::LEFT);
-            cout << "Partie réinitialisée !" << endl;
+            boat->setSide(leftBank);
+            cout << "Partie reinitialisee !" << endl << endl;
             break;
         case 'q':
-            cout << "Fin de la partie ! ";
-            finished = true;
+            cout << "Fin de la partie ! " << endl;
+            ended = true;
             break;
         case 'h':
             showMenu();
@@ -90,10 +98,65 @@ void Controller::nextTurn() {
 }
 
 void Controller::run() {
-    while (!finished){
+    while (true){
         nextTurn();
+        testTaille();
+        if(finished() or ended)
+            break;
+    }
+    if(!ended)
+        cout << "Bravo, c'est gagne !" << endl;
+
+
+}
+
+void Controller::embarquer(Person *p) {
+    if(boat->contain(p))
+         cout << p->getName() << " est deja dans le bateau !" << endl;
+    else if (!boat->getSide()->contain(p))
+        cout << p->getName() << " n'est pas sur la berge !" << endl;
+    else{
+        boat->getSide()->removePerson(p);
+        boat->addPerson(p);
     }
 }
 
+void Controller::debarquer(Person *p) {
+    if(!boat->contain(p))
+        cout << p->getName() << " n'est pas dans le bateau !" << endl;
+    else{
+        boat->removePerson(p);
+        boat->getSide()->addPerson(p);
+    }
+}
 
+void Controller::moveBoat() {
+    if(boat->getSide() == rightBank){
+        boat->setSide(leftBank);
+    }
+    else
+        boat->setSide(rightBank);
+}
+
+Person *Controller::getPersonByName(string name) {
+    for(Person* p : listInit){
+        if(p->getName() == name) {
+            return p;
+        }
+    }
+    cout << "Personne inconnue !";
+    return nullptr; //TODO gerer le cas ou la personne existe pas
+}
+
+bool Controller::finished() {
+    return rightBank->getSize() == listInit.size();
+}
+
+void Controller::testTaille() {
+    cout << "Init " << listInit.size() << endl;
+    cout << "Lbank " << leftBank->getSize() << endl;
+    cout << "Boat " << boat->getSize() << endl;
+    cout << "Rbank " << rightBank->getSize() << endl;
+    cout << finished() << endl;
+}
 
