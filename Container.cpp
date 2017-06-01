@@ -35,6 +35,6 @@ bool Container::contain(Person* p) {
 }
 
 int Container::getSize() {
-    l.size();
+    return l.size();
 }
 

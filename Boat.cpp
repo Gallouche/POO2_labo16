@@ -5,7 +5,7 @@
 #include "Boat.hpp"
 
 
-Boat::Boat(string name): Container(name), side() {}
+Boat::Boat(string name): Container(name) {}
 
 Bank* Boat::getSide(){
     return side;
@@ -21,11 +21,4 @@ void Boat::displayPersons() {
     for (list<Person*>::iterator it = l.begin(); it != l.end(); it++)
         cout <<  (**it).getName() << " ";
     cout << ">" << endl;
-}
-
-void Boat::embarquer(string person) {
-
-}
-
-void Boat::debarquer(string person) {
 }

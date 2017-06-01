@@ -10,7 +10,6 @@
 class Bank: public Container {
 public:
     Bank(const string &name);
-
 public:
 };
 

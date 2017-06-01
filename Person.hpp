@@ -21,7 +21,6 @@ public:
     bool canDrive();
     string getName();
     friend bool operator == (const Person& lhs, const Person& rhs);
-    friend bool operator == (const Person& lhs, const string& rhs);
 };
 
 

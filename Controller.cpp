@@ -52,22 +52,33 @@ void Controller::nextTurn() {
     }
 
     cout << turn << ">";
+    turn++;
     char move;
     string person;
-    cin >> move;
+    string str;
+    getline(cin,str);
+    move = str.at(0);
+    Person* currentPerson;
+    if(str.size() > 1){
+        person = str.substr(2);
+         currentPerson = getPersonByName(person);
+        if(!currentPerson){
+            return;
+        }
+    }
+
+
 
     switch (move){
         case 'p':
             display();
             break;
         case 'e':
-            cin >> person;
-            embarquer(getPersonByName(person));
+            embarquer(currentPerson);
             display();
             break;
         case 'd':
-            cin >> person;
-            debarquer(getPersonByName(person));
+            debarquer(currentPerson);
             display();
             break;
         case 'm':
@@ -75,9 +86,12 @@ void Controller::nextTurn() {
             display();
             break;
         case 'r':
-            turn = -1;
-            //leftBank = listInit;
+            turn = 0;
             rightBank->clear();
+            leftBank->clear();
+            for(Person* p : listInit){
+                leftBank->addPerson(p);
+            }
             boat->clear();
             boat->setSide(leftBank);
             cout << "Partie reinitialisee !" << endl << endl;
@@ -94,13 +108,11 @@ void Controller::nextTurn() {
             turn--;
             break;
     }
-    turn++;
 }
 
 void Controller::run() {
     while (true){
         nextTurn();
-        testTaille();
         if(finished() or ended)
             break;
     }
@@ -144,19 +156,12 @@ Person *Controller::getPersonByName(string name) {
             return p;
         }
     }
-    cout << "Personne inconnue !";
-    return nullptr; //TODO gerer le cas ou la personne existe pas
+    cout << "Personne inconnue !" << endl;
+    return nullptr;
 }
 
 bool Controller::finished() {
     return rightBank->getSize() == listInit.size();
 }
 
-void Controller::testTaille() {
-    cout << "Init " << listInit.size() << endl;
-    cout << "Lbank " << leftBank->getSize() << endl;
-    cout << "Boat " << boat->getSize() << endl;
-    cout << "Rbank " << rightBank->getSize() << endl;
-    cout << finished() << endl;
-}
 

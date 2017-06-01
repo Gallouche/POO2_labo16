@@ -36,7 +36,6 @@ public:
     void moveBoat();
     Person* getPersonByName(string name);
     bool finished();
-    void testTaille();
 };
 
 
