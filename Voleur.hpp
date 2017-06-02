@@ -8,16 +8,25 @@
 #include <string>
 
 #include "Person.hpp"
+#include "Container.hpp"
 
 using namespace std;
 
 class Voleur: public Person {
+private:
+    Person* policier;
 public:
     /**
      * Voleur constructor
      * @param name the name of the thief
      */
-    Voleur(const string &name);
+    Voleur(const string &name, Person* policier);
+
+    bool checkConditions(list<Person*> l);
+
+    bool canDrive() {
+        return false;
+    }
 };
 
 

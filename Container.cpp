@@ -16,8 +16,8 @@ void Container::removePerson(Person* p) {
 }
 
 void Container::displayPersons() {
-    for (list<Person*>::iterator it = l.begin(); it != l.end(); it++)
-        cout << (**it).getName() << " ";
+    for (Person* p : l)
+        cout <<  p->getName() << " ";
     cout << endl;
 }
 
@@ -25,9 +25,9 @@ void Container::clear() {
     l.clear();
 }
 
-bool Container::contains(Person* p) {
-    for (list<Person*>::iterator it = l.begin(); it != l.end(); it++){
-        if(*it == p){
+bool Container::contains(Person* person) {
+    for (Person* p : l) {
+        if(p == person) {
             return true;
         }
     }
@@ -42,3 +42,11 @@ string Container::getName() {
     return name;
 }
 
+bool Container::checkConditions() {
+    for(Person* p : l) {
+        if(!p->checkConditions(l)) {
+            return false;
+        }
+    }
+    return true;
+}

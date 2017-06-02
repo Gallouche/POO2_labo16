@@ -36,6 +36,8 @@ public:
      * Displays the people that are currently in the boat
      */
     void displayPersons();
+
+    bool canMove();
 };
 
 

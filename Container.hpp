@@ -68,6 +68,8 @@ public:
      * @return the name
      */
     string getName();
+
+    bool checkConditions();
 };
 
 

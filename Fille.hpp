@@ -8,21 +8,26 @@
 #include <string>
 
 #include "Person.hpp"
+#include "Container.hpp"
 
 using namespace std;
 
 class Fille: public Person {
 private:
-
     Person* pere;
     Person* mere;
-
 public:
     /**
      * Fille constructor
      * @param name the name of the daughter
      */
     Fille(const string &name, Person* pere, Person* mere);
+
+    bool checkConditions(list<Person*> l);
+
+    bool canDrive() {
+        return false;
+    }
 };
 
 
