@@ -4,15 +4,9 @@
 
 #include "Person.hpp"
 
+Person::Person(const string &name): name(name), drive(true) {}
 
-Person::Person(string name): name(name), drive(true)
-{}
-
-Person::Person(string name, bool canDrive): name(name), drive(canDrive)
-{}
-
-
-
+Person::Person(const string &name, bool canDrive): name(name), drive(canDrive) {}
 
 bool operator==(const Person &lhs, const Person &rhs) {
     return lhs.name == rhs.name;

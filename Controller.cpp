@@ -145,7 +145,7 @@ void Controller::embarquer(Person *p) {
 
 void Controller::debarquer(Person *p) {
     if(!boat->contains(p))
-        cout << p->getName() << " n'est pas dans le bateau !" << endl;
+        cout << p->getName() << " n'est pas dans le bateau !" << endl << endl;
     else{
         boat->removePerson(p);
         boat->getSide()->addPerson(p);
@@ -174,6 +174,7 @@ bool Controller::finished() {
 }
 
 void Controller::reInit() {
+    // Clear all containers, and set to initial state
     turn = 0;
     rightBank->clear();
     leftBank->clear();
