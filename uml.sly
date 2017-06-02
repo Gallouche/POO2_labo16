@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
 <classDiagram>
   <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="Labo16">
-    <inheritance id="12783">
-      <child>12777</child>
-      <parent>12023</parent>
-    </inheritance>
     <inheritance id="12782">
       <child>12776</child>
-      <parent>12023</parent>
-    </inheritance>
-    <inheritance id="12781">
-      <child>12775</child>
-      <parent>12023</parent>
-    </inheritance>
-    <inheritance id="12780">
-      <child>12293</child>
       <parent>12023</parent>
     </inheritance>
     <inheritance id="12779">
@@ -51,8 +39,19 @@
       <method isAbstract="false" isStatic="false" name="clear" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
       <method isAbstract="false" isStatic="false" name="getSize" returnType="int" view="DEFAULT" visibility="PUBLIC"/>
       <method isAbstract="false" isStatic="false" name="getName" returnType="string" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="checkConditions" returnType="bool" view="DEFAULT" visibility="PUBLIC"/>
     </entity>
-    <entity entityType="CLASS" id="12023" isAbstract="false" name="Person" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="12023" isAbstract="true" name="Person" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="name" type="string" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="Person" returnType="Constructor" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="~Person" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="true" isStatic="false" name="canDrive" returnType="bool" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="getName" returnType="string" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="true" isStatic="false" name="method" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="lhs" type="Person"/>
+        <variable const="false" name="rhs" type="Person"/>
+      </method>
+    </entity>
     <entity entityType="CLASS" id="12024" isAbstract="false" name="Boat" visibility="PUBLIC">
       <attribute const="false" defaultValue="" isStatic="false" name="attribute" type="Bank*" visibility="PRIVATE"/>
       <method isAbstract="false" isStatic="false" name="Boat" returnType="constructor" view="DEFAULT" visibility="PUBLIC">
@@ -63,146 +62,55 @@
         <variable const="false" name="newSide" type="Bank*"/>
       </method>
       <method isAbstract="false" isStatic="false" name="displayPersons" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="canMove" returnType="bool" view="DEFAULT" visibility="PUBLIC"/>
     </entity>
     <entity entityType="CLASS" id="12025" isAbstract="false" name="Bank" visibility="PUBLIC">
       <method isAbstract="false" isStatic="false" name="Bank" returnType="Constructor" view="DEFAULT" visibility="PUBLIC">
         <variable const="false" name="name" type="string"/>
       </method>
     </entity>
-    <entity entityType="CLASS" id="12026" isAbstract="false" name="Controller" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="12026" isAbstract="false" name="Controller" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="listInit" type="list&lt;Person*&gt;" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="turn" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="leftBank" type="Bank*" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="rightBank" type="Bank*" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="boat" type="Boat*" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="ended" type="bool" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="Controller" returnType="Constructor" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="p" type="initializer_list&lt;Person*&gt;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="~Controller" returnType="Destructor" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="run" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="showMenu" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="display" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="nextTurn" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="embarquer" returnType="void" view="DEFAULT" visibility="PRIVATE">
+        <variable const="false" name="p" type="Person*"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="debarquer" returnType="void" view="DEFAULT" visibility="PRIVATE">
+        <variable const="false" name="p" type="Person*"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="moveBoat" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="getPersonByName" returnType="Person*" view="DEFAULT" visibility="PRIVATE">
+        <variable const="false" name="p" type="string"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="finished" returnType="bool" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="reInit" returnType="void" view="DEFAULT" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="checkCommand" returnType="tuple&lt;char,string&gt;" view="DEFAULT" visibility="PRIVATE"/>
+    </entity>
   </diagramElements>
   <umlView grid="10" name="Main view" open="true">
-    <relationView color="-12566464" relationId="12778">
-      <line>
-        <point>
-          <x>1041</x>
-          <y>311</y>
-        </point>
-        <point>
-          <x>1041</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>196</y>
-        </point>
-      </line>
-    </relationView>
-    <relationView color="-12566464" relationId="12779">
-      <line>
-        <point>
-          <x>1201</x>
-          <y>311</y>
-        </point>
-        <point>
-          <x>1201</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>196</y>
-        </point>
-      </line>
-    </relationView>
-    <relationView color="-12566464" relationId="12780">
-      <line>
-        <point>
-          <x>1361</x>
-          <y>311</y>
-        </point>
-        <point>
-          <x>1361</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>196</y>
-        </point>
-      </line>
-    </relationView>
-    <relationView color="-12566464" relationId="12781">
-      <line>
-        <point>
-          <x>1521</x>
-          <y>311</y>
-        </point>
-        <point>
-          <x>1521</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>196</y>
-        </point>
-      </line>
-    </relationView>
-    <relationView color="-12566464" relationId="12782">
-      <line>
-        <point>
-          <x>1681</x>
-          <y>311</y>
-        </point>
-        <point>
-          <x>1681</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>196</y>
-        </point>
-      </line>
-    </relationView>
-    <relationView color="-12566464" relationId="12783">
-      <line>
-        <point>
-          <x>1831</x>
-          <y>311</y>
-        </point>
-        <point>
-          <x>1831</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>261</y>
-        </point>
-        <point>
-          <x>1441</x>
-          <y>196</y>
-        </point>
-      </line>
-    </relationView>
     <componentView color="-2079" componentID="12026" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>960</x>
+        <x>460</x>
         <y>420</y>
-        <w>150</w>
-        <h>55</h>
+        <w>340</w>
+        <h>340</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="12025" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>610</x>
+        <x>270</x>
         <y>420</y>
         <w>150</w>
         <h>70</h>
@@ -210,72 +118,48 @@
     </componentView>
     <componentView color="-2079" componentID="12024" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>420</x>
+        <x>80</x>
         <y>420</y>
         <w>150</w>
-        <h>130</h>
+        <h>145</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="12023" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>1360</x>
-        <y>140</y>
+        <x>1030</x>
+        <y>160</y>
         <w>150</w>
-        <h>55</h>
+        <h>145</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="12022" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>510</x>
-        <y>130</y>
+        <x>80</x>
+        <y>140</y>
         <w>210</w>
-        <h>220</h>
-      </geometry>
-    </componentView>
-    <componentView color="-2079" componentID="12291" displayAttributes="true" displayDefault="true" displayMethods="true">
-      <geometry>
-        <x>960</x>
-        <y>310</y>
-        <w>150</w>
-        <h>55</h>
-      </geometry>
-    </componentView>
-    <componentView color="-2079" componentID="12292" displayAttributes="true" displayDefault="true" displayMethods="true">
-      <geometry>
-        <x>1120</x>
-        <y>310</y>
-        <w>150</w>
-        <h>55</h>
+        <h>235</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="12293" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>1280</x>
-        <y>310</y>
+        <x>860</x>
+        <y>500</y>
         <w>150</w>
         <h>55</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="12775" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>1440</x>
-        <y>310</y>
-        <w>150</w>
-        <h>55</h>
-      </geometry>
-    </componentView>
-    <componentView color="-2079" componentID="12776" displayAttributes="true" displayDefault="true" displayMethods="true">
-      <geometry>
-        <x>1600</x>
-        <y>310</y>
+        <x>1020</x>
+        <y>500</y>
         <w>150</w>
         <h>55</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="12777" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>1760</x>
-        <y>310</y>
+        <x>1180</x>
+        <y>500</y>
         <w>150</w>
         <h>55</h>
       </geometry>

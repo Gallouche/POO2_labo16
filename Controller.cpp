@@ -100,7 +100,7 @@ void Controller::nextTurn() {
             break;
         case 'm':
             if(!boat->canMove()) {
-                cout << "Pas de pilote à bord !" << endl;
+                cout << "Pas de pilote a bord !" << endl;
                 turn--;
                 return;
             }
@@ -116,6 +116,7 @@ void Controller::nextTurn() {
             ended = true;
             break;
         case 'h':
+            turn--;
             showMenu();
             break;
         default:
@@ -196,17 +197,6 @@ void Controller::reInit() {
 }
 
 tuple<char, string> Controller::checkCommand(const string &toParse) {
-    //regex r("([pedrmqh] [^\\s]+)|([pedrmqh])");
-//    if(regex_match(toParse,r)){
-//        move = toParse.at(0);
-//        person = toParse.substr(2);
-//        return true;
-//    }
-//    else{
-//        cout << "Commande invalide" << endl;
-//        return false;
-//    }
-
     // Throw exception if empty entry
     if(toParse == "") {
         throw std::invalid_argument("Saisie vide !");
