@@ -14,7 +14,6 @@ public:
      * @param name the name of the container
      */
     Bank(const string &name);
-public:
 };
 
 #endif //LABO16_BANK_HPP
