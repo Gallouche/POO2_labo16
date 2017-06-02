@@ -1,0 +1,735 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [-3 -3 5931 2246]
+/Contents 4 0 R
+/Resources 6 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 5 0 R
+>>
+stream
+q
+2.8346457 0 0 -2.8346457 0 2246 cm
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+1150 380 m 1150 320 l S
+1150 320 m 1410 320 l S
+1410 320 m 1410 240 l S
+1 1 1 rg 1 1 1 RG
+1410 240 m 1418 260 l 1402 260 l h f
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+1410 240 m 1418 260 l 1402 260 l h S
+1530 380 m 1530 320 l S
+1530 320 m 1410 320 l S
+1410 320 m 1410 240 l S
+1 1 1 rg 1 1 1 RG
+1410 240 m 1418 260 l 1402 260 l h f
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+1410 240 m 1418 260 l 1402 260 l h S
+1830 380 m 1830 320 l S
+1830 320 m 1410 320 l S
+1410 320 m 1410 240 l S
+1 1 1 rg 1 1 1 RG
+1410 240 m 1418 260 l 1402 260 l h f
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+1410 240 m 1418 260 l 1402 260 l h S
+240 380 m 240 350 l S
+240 350 m 330 350 l S
+330 350 m 330 305 l S
+1 1 1 rg 1 1 1 RG
+330 305 m 338 325 l 322 325 l h f
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+330 305 m 338 325 l 322 325 l h S
+430 380 m 430 350 l S
+430 350 m 330 350 l S
+330 350 m 330 305 l S
+1 1 1 rg 1 1 1 RG
+330 305 m 338 325 l 322 325 l h f
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+330 305 m 338 325 l 322 325 l h S
+460 120 m 1260 120 l S
+1240 128 m 1260 120 l 1240 112 l S
+270 525 m 270 550 l S
+270 550 m 370 550 l S
+370 550 m 370 450 l S
+378 470 m 370 450 l 362 470 l S
+560 520 m 470 520 l S
+470 520 m 470 450 l S
+478 470 m 470 450 l 462 470 l S
+560 660 m 200 660 l S
+200 660 m 200 525 l S
+208 545 m 200 525 l 192 545 l S
+1290 314 m 1286.6862915 314 1284 316.6862915 1284 320 c 1284 323.3137085 1286.6862915 326 1290 326 c S
+1290 380 m 1290 326 l S
+1290 314 m 1290 240 l S
+1298 260 m 1290 240 l 1282 260 l S
+1480 314 m 1476.6862915 314 1474 316.6862915 1474 320 c 1474 323.3137085 1476.6862915 326 1480 326 c S
+1480 380 m 1480 326 l S
+1480 314 m 1480 240 l S
+1488 260 m 1480 240 l 1472 260 l S
+1790 314 m 1786.6862915 314 1784 316.6862915 1784 320 c 1784 323.3137085 1786.6862915 326 1790 326 c S
+1790 380 m 1790 326 l S
+1790 314 m 1790 210 l S
+1790 210 m 1530 210 l S
+1550 202 m 1530 210 l 1550 218 l S
+860 430 m 860 200 l S
+860 200 m 1260 200 l S
+1240 208 m 1260 200 l 1240 192 l S
+1 0.9686275 0.8823529 rg 1 0.9686275 0.8823529 RG
+560 430 m 880 430 l 880 752 l 560 752 l 560 430 l h f
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+560 430 m 880 430 l 880 752 l 560 752 l 560 430 l h S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F1 12 Tf
+1 0 0 -1 689 453 cm
+(Controller) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+560 465 m 880 465 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 568 480 cm
+(- listInit : list<Person*>) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 494 cm
+(- turn : int) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 508 cm
+(- leftBank : Bank*) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 522 cm
+(- rightBank : Bank*) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 536 cm
+(- boat : Boat*) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 550 cm
+(- ended : bool) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+560 559 m 880 559 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 568 574 cm
+(+ Controller \(p : initializer_list<Person*>\) : Construc...) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 588 cm
+(+ ~Controller \(\) : Destructor) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 602 cm
+(+ run \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 616 cm
+(- showMenu \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 630 cm
+(- display \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 644 cm
+(- nextTurn \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 658 cm
+(- embarquer \(p : Person*\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 672 cm
+(- debarquer \(p : Person*\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 686 cm
+(- moveBoat \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 700 cm
+(- getPersonByName \(p : string\) : Person*) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 714 cm
+(- finished \(\) : bool) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 728 cm
+(- reInit \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 568 742 cm
+(- checkCommand \(\) : tuple<char,string>) Tj
+ET Q
+1 0.9686275 0.8823529 rg 1 0.9686275 0.8823529 RG
+350 380 m 570 380 l 570 449 l 350 449 l 350 380 l h f
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+350 380 m 570 380 l 570 449 l 350 449 l 350 380 l h S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F1 12 Tf
+1 0 0 -1 445 403 cm
+(Bank) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+350 415 m 570 415 l S
+350 425 m 570 425 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 358 440 cm
+(+ Bank \(name : string\) : Constructor) Tj
+ET Q
+1 0.9686275 0.8823529 rg 1 0.9686275 0.8823529 RG
+160 380 m 370 380 l 370 519 l 160 519 l 160 380 l h f
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+160 380 m 370 380 l 370 519 l 160 519 l 160 380 l h S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F1 12 Tf
+1 0 0 -1 251 403 cm
+(Boat) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+160 415 m 370 415 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 168 430 cm
+(- attribute : Bank*) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+160 439 m 370 439 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 168 454 cm
+(+ Boat \(name : string\) : construc...) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 168 468 cm
+(+ getSide \(\) : Bank*) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 168 482 cm
+(+ setSide \(newSide : Bank*\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 168 496 cm
+(+ displayPersons \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 168 510 cm
+(+ canMove \(\) : bool) Tj
+ET Q
+1 0.9686275 0.8823529 rg 1 0.9686275 0.8823529 RG
+1260 80 m 1530 80 l 1530 233 l 1260 233 l 1260 80 l h f
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+1260 80 m 1530 80 l 1530 233 l 1260 233 l 1260 80 l h S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F3 12 Tf
+1 0 0 -1 1374 103 cm
+(Person) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+1260 115 m 1530 115 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 1268 130 cm
+(- name : string) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+1260 139 m 1530 139 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 1268 154 cm
+(+ Person \(\) : Constructor) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 1268 168 cm
+(+ ~Person \(\) : void) Tj
+ET Q
+q BT
+/F4 12 Tf
+1 0 0 -1 1268 182 cm
+(+ canDrive \(\) : bool) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 1268 196 cm
+(+ getName \(\) : string) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 1268 210 cm
+(+ opertaor== \(lhs : Person, rhs : Person\) : void) Tj
+ET Q
+q BT
+/F4 12 Tf
+1 0 0 -1 1268 224 cm
+(+ checkConditions \(p : list<Person*>\) : bool) Tj
+ET Q
+1 0.9686275 0.8823529 rg 1 0.9686275 0.8823529 RG
+220 70 m 460 70 l 460 293 l 220 293 l 220 70 l h f
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+220 70 m 460 70 l 460 293 l 220 293 l 220 70 l h S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F3 12 Tf
+1 0 0 -1 310 93 cm
+(Container) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+220 105 m 460 105 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 228 120 cm
+(# name : string) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 228 134 cm
+(# attribute : List<Person*>) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+220 143 m 460 143 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 228 158 cm
+(+ Container \(name : string\) : construc...) Tj
+ET Q
+q BT
+/F4 12 Tf
+1 0 0 -1 228 172 cm
+(+ ~Container \(\) : destructor) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 228 186 cm
+(+ addPerson \(p : Person*\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 228 200 cm
+(+ removePerson \(p : Person*\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 228 214 cm
+(+ contains \(p : Person*\) : bool) Tj
+ET Q
+q BT
+/F4 12 Tf
+1 0 0 -1 228 228 cm
+(+ displayPersons \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 228 242 cm
+(+ clear \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 228 256 cm
+(+ getSize \(\) : int) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 228 270 cm
+(+ getName \(\) : string) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 228 284 cm
+(+ checkConditions \(\) : bool) Tj
+ET Q
+1 0.9686275 0.8823529 rg 1 0.9686275 0.8823529 RG
+960 380 m 1340 380 l 1340 505 l 960 505 l 960 380 l h f
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+960 380 m 1340 380 l 1340 505 l 960 505 l 960 380 l h S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F1 12 Tf
+1 0 0 -1 1139 403 cm
+(Fils) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+960 415 m 1340 415 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 968 430 cm
+(- pere : Person*) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 968 444 cm
+(- mere : Person*) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+960 453 m 1340 453 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 968 468 cm
+(+ Fils \(name : string, pere : Person*, mere : Person*\) : Construc...) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 968 482 cm
+(+ checkConditions \(p : list<Person*>\) : bool) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 968 496 cm
+(+ canDrive \(\) : bool) Tj
+ET Q
+1 0.9686275 0.8823529 rg 1 0.9686275 0.8823529 RG
+1750 380 m 2070 380 l 2070 505 l 1750 505 l 1750 380 l h f
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+1750 380 m 2070 380 l 2070 505 l 1750 505 l 1750 380 l h S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F1 12 Tf
+1 0 0 -1 1890 403 cm
+(Voleur) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+1750 415 m 2070 415 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 1758 430 cm
+(- policier : Person*) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+1750 439 m 2070 439 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 1758 454 cm
+(+ Voleur \(name : string, policier : Person*\) : Construc...) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 1758 468 cm
+(+ method \(\) : void) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 1758 482 cm
+(+ checkConditions \(\) : bool) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 1758 496 cm
+(+ canDrive \(\) : bool) Tj
+ET Q
+1 0.9686275 0.8823529 rg 1 0.9686275 0.8823529 RG
+1340 380 m 1720 380 l 1720 505 l 1340 505 l 1340 380 l h f
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+1340 380 m 1720 380 l 1720 505 l 1340 505 l 1340 380 l h S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F1 12 Tf
+1 0 0 -1 1517 403 cm
+(Fille) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+1340 415 m 1720 415 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 1348 430 cm
+(- pere : Person*) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 1348 444 cm
+(- mere : Person*) Tj
+ET Q
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+1340 453 m 1720 453 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F2 12 Tf
+1 0 0 -1 1348 468 cm
+(+ Fille \(name : string, pere : Person*, mere : Person*\) : Construc...) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 1348 482 cm
+(+ checkConditions \(p : list<Person*>\) : bool) Tj
+ET Q
+q BT
+/F2 12 Tf
+1 0 0 -1 1348 496 cm
+(+ canDrive \(\) : bool) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 832 102 cm
+(contains >) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 465 112 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1247 112 cm
+(*) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 295 569 cm
+(current >) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 257 544 cm
+(0..1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 357 469 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 462 544 cm
+(<handles ) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 547 512 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 446 469 cm
+(2) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 287 682 cm
+(< handles) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 547 652 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 187 544 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1215 305 cm
+(contains ^) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1277 372 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1277 259 cm
+(2) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1490 310 cm
+(contains ^) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1467 372 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1467 259 cm
+(2) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1665 229 cm
+(< contains ) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1777 372 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1535 202 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1065 219 cm
+(handles >) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 847 422 cm
+(1) Tj
+ET Q
+q BT
+/F5 14 Tf
+1 0 0 -1 1247 192 cm
+(*) Tj
+ET Q
+1 0.9686275 0.8823529 rg 1 0.9686275 0.8823529 RG
+0 0 m 0 30 l 49 30 l 69 30 79 20 79 0 c 0 0 l f
+1.2 w
+0.254902 0.254902 0.254902 rg 0.254902 0.254902 0.254902 RG
+0 0 m 0 30 l 49 30 l 69 30 79 20 79 0 c 0 0 l S
+1 w
+0.2509804 0.2509804 0.2509804 rg 0.2509804 0.2509804 0.2509804 RG
+q BT
+/F6 16 Tf
+1 0 0 -1 5 22 cm
+(Labo16) Tj
+ET Q
+0 0 m 2089 0 l 2089 789 l 0 789 l 0 0 l h S
+Q
+endstream
+endobj
+5 0 obj
+13489
+endobj
+6 0 obj
+<<
+ /ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+ /Font <<
+  /F1 << /Type /Font /Subtype /TrueType /BaseFont /Ubuntu >>
+  /F2 << /Type /Font /Subtype /TrueType /BaseFont /Ubuntu >>
+  /F3 << /Type /Font /Subtype /TrueType /BaseFont /Ubuntu >>
+  /F4 << /Type /Font /Subtype /TrueType /BaseFont /Ubuntu >>
+  /F5 << /Type /Font /Subtype /TrueType /BaseFont /Ubuntu >>
+  /F6 << /Type /Font /Subtype /TrueType /BaseFont /Ubuntu >>
+ >>
+>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000223 00000 n 
+0000013765 00000 n 
+0000013786 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+14234
+%%EOF
