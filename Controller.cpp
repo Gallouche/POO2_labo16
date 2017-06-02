@@ -125,8 +125,6 @@ void Controller::run() {
     }
     if(!ended)
         cout << "Bravo, c'est gagne !" << endl;
-
-
 }
 
 void Controller::embarquer(Person *p) {
