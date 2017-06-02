@@ -3,10 +3,10 @@
 #include "Controller.hpp"
 
 int main() {
-    Person papa("papa");
-    Person maman("maman");
+    Person* papa = new Person("papa");
+    Person* maman = new Person("maman");
 
-    Controller c({&papa,&maman});
+    Controller c({papa,maman});
     c.run();
     return EXIT_SUCCESS;
 }

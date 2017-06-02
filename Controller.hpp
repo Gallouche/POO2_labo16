@@ -89,6 +89,7 @@ private:
 
 public:
     Controller(initializer_list<Person*> p);
+    ~Controller();
     void run();
 
 };

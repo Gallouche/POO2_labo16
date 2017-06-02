@@ -211,3 +211,12 @@ tuple<char, string> Controller::checkCommand(const string &toParse) {
     }
 }
 
+Controller::~Controller() {
+    for(Person* p : listInit){
+        delete p;
+    }
+    delete leftBank;
+    delete rightBank;
+    delete boat;
+}
+
