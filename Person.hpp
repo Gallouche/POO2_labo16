@@ -5,13 +5,12 @@
 #ifndef LABO16_PERSON_HPP
 #define LABO16_PERSON_HPP
 
-
 #include <string>
 
 using namespace std;
 
 class Person {
-private:
+protected:
     string name;
     bool drive;
 public:
@@ -20,14 +19,14 @@ public:
      * Person constructor
      * @param name the name of the person
      */
-    Person(string name);
+    Person(const string &name);
 
     /**
      * Person constructor
      * @param name the name of the person
      * @param canDrive
      */
-    Person(string name, bool canDrive);
+    Person(const string &name, bool canDrive);
 
     /**
      * Person destructor
