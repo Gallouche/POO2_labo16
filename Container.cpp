@@ -57,6 +57,7 @@ string Container::getName() {
 bool Container::checkConditions() {
     for(Person* p : l) {
         if(!p->checkConditions(l)) {
+            cout << "Condition non respectee, operation annulee !" << endl;
             return false;
         }
     }

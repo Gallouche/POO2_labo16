@@ -112,7 +112,7 @@ void Controller::nextTurn() {
             break;
         case 'm':
             if(!boat->canMove()) {
-                cout << "Pas de pilote à bord !" << endl;
+                cout << "Pas de pilote a bord !" << endl;
                 turn--;
                 return;
             }
@@ -128,6 +128,7 @@ void Controller::nextTurn() {
             ended = true;
             break;
         case 'h':
+            turn--;
             showMenu();
             break;
         default:
@@ -148,8 +149,6 @@ void Controller::run() {
     }
     if(!ended)
         cout << "Bravo, c'est gagne !" << endl;
-
-
 }
 
 void Controller::embarquer(Person *p) {
@@ -210,7 +209,6 @@ void Controller::reInit() {
 }
 
 tuple<char, string> Controller::checkCommand(const string &toParse) {
-
     // Throw exception if empty entry
     if(toParse == "") {
         throw std::invalid_argument("Saisie vide !");
@@ -223,5 +221,11 @@ tuple<char, string> Controller::checkCommand(const string &toParse) {
     } else {
         throw std::invalid_argument("Erreur de saisie !");
     }
+}
+
+Controller::~Controller() {
+    delete leftBank;
+    delete rightBank;
+    delete boat;
 }
 

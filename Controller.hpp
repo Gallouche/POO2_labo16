@@ -99,7 +99,21 @@ private:
     std::tuple<char, string> checkCommand(const string &toParse);
 
 public:
+
+    /**
+     * Controller constructor
+     * @param p the initializer_list of people
+     */
     Controller(initializer_list<Person*> p);
+
+    /**
+     * Controller destructor
+     */
+    ~Controller();
+
+    /**
+     * Starts the game
+     */
     void run();
 
 };

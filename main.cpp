@@ -34,5 +34,14 @@ int main() {
     Controller c({papa,maman, paul, pierre, julie, jeanne, policier, voleur});
     c.run();
 
+    delete papa;
+    delete maman;
+    delete paul;
+    delete pierre;
+    delete julie;
+    delete jeanne;
+    delete policier;
+    delete voleur;
+
     return EXIT_SUCCESS;
 }
