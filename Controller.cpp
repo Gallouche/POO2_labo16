@@ -1,6 +1,18 @@
-//
-// Created by Gallouche on 19/05/2017.
-//
+/*
+ -----------------------------------------------------------------------------------
+ Laboratoire : Laboratoire 16 : Riviere
+ Fichier     : Controller.cpp
+ Auteur(s)   : Théo Gallandat <theo.gallandat@heig-vd.ch>
+               Pierre-Samuel Rochat <pierre-samuel.rochat@heig-vd.ch>
+ Date        : 02.06.2017
+
+ But         : Implémentation de la classe "Controller".
+
+ Remarque(s) : RAS
+
+ Compilateur : MinGW-g++ 4.8.1
+ -----------------------------------------------------------------------------------
+ */
 
 #include "Controller.hpp"
 
@@ -198,16 +210,6 @@ void Controller::reInit() {
 }
 
 tuple<char, string> Controller::checkCommand(const string &toParse) {
-    //regex r("([pedrmqh] [^\\s]+)|([pedrmqh])");
-//    if(regex_match(toParse,r)){
-//        move = toParse.at(0);
-//        person = toParse.substr(2);
-//        return true;
-//    }
-//    else{
-//        cout << "Commande invalide" << endl;
-//        return false;
-//    }
 
     // Throw exception if empty entry
     if(toParse == "") {

@@ -1,6 +1,18 @@
-//
-// Created by Gallouche on 19/05/2017.
-//
+/*
+ -----------------------------------------------------------------------------------
+ Laboratoire : Laboratoire 16 : Riviere
+ Fichier     : Container.cpp
+ Auteur(s)   : Théo Gallandat <theo.gallandat@heig-vd.ch>
+               Pierre-Samuel Rochat <pierre-samuel.rochat@heig-vd.ch>
+ Date        : 02.06.2017
+
+ But         : Implementation de la classe container.
+
+ Remarque(s) : RAS
+
+ Compilateur : MinGW-g++ 4.8.1
+ -----------------------------------------------------------------------------------
+ */
 
 #include "Container.hpp"
 

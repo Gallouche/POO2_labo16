@@ -1,6 +1,19 @@
-//
-// Created by Gallouche on 19/05/2017.
-//
+/*
+ -----------------------------------------------------------------------------------
+ Laboratoire : Laboratoire 16 : Riviere
+ Fichier     : Controller.hpp
+ Auteur(s)   : Théo Gallandat <theo.gallandat@heig-vd.ch>
+               Pierre-Samuel Rochat <pierre-samuel.rochat@heig-vd.ch>
+ Date        : 02.06.2017
+
+ But         : Classe "Controller" contient les differents containers.  Gere les
+               differents movement possibles du jeu.
+
+ Remarque(s) : RAS
+
+ Compilateur : MinGW-g++ 4.8.1
+ -----------------------------------------------------------------------------------
+ */
 
 #ifndef LABO16_CONTROLLER_HPP
 #define LABO16_CONTROLLER_HPP
@@ -84,8 +97,6 @@ private:
      * Throw exception if the string is > 2 but the second charactere isn't a space char.
      */
     std::tuple<char, string> checkCommand(const string &toParse);
-
-
 
 public:
     Controller(initializer_list<Person*> p);
