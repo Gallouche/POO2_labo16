@@ -5,7 +5,7 @@
 #include "Boat.hpp"
 
 
-Boat::Boat(string name): Container(name) {}
+Boat::Boat(const string &name): Container(name) {}
 
 Bank* Boat::getSide(){
     return side;

@@ -4,7 +4,7 @@
 
 #include "Container.hpp"
 
-Container::Container(string name): name(name) {}
+Container::Container(const string &name): name(name) {}
 
 Container::~Container() {}
 
@@ -25,7 +25,7 @@ void Container::clear() {
     l.clear();
 }
 
-bool Container::contain(Person* p) {
+bool Container::contains(Person* p) {
     for (list<Person*>::iterator it = l.begin(); it != l.end(); it++){
         if(*it == p){
             return true;

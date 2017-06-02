@@ -15,11 +15,43 @@ private:
     string name;
     bool drive;
 public:
+
+    /**
+     * Person constructor
+     * @param name the name of the person
+     */
     Person(string name);
+
+    /**
+     * Person constructor
+     * @param name the name of the person
+     * @param canDrive
+     */
     Person(string name, bool canDrive);
+
+    /**
+     * Person destructor
+     */
     ~Person(){}
+
+    /**
+     * Gets if the person can drive or not
+     * @return true or false
+     */
     bool canDrive();
+
+    /**
+     * Gets the name of the person
+     * @return the name
+     */
     string getName();
+
+    /**
+     * Comparison operator, compare the names of the 2 people
+     * @param lhs the first person
+     * @param rhs the second person
+     * @return true or false
+     */
     friend bool operator == (const Person& lhs, const Person& rhs);
 };
 

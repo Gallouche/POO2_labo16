@@ -64,13 +64,15 @@ void Controller::nextTurn() {
     string person;
     string toParse;
     getline(cin,toParse);
-    Person* currentPerson;
+    Person* currentPerson = nullptr;
 
-    bool valid = checkCommand(toParse, move, person);
-    currentPerson = getPersonByName(person);
-    if((!currentPerson && toParse.size() > 2) || !valid) {
-        cout << "Commande ou personne invalide !" << endl;
-        return;
+    tuple<char, string> result;
+
+    result = checkCommand(toParse);
+    move = get<0>(result);
+    person = get<1>(result);
+    if(person != "") {
+        currentPerson = getPersonByName(person);
     }
 
     switch (move){
@@ -79,11 +81,13 @@ void Controller::nextTurn() {
             display();
             break;
         case 'e':
+            if(!currentPerson) throw std::invalid_argument("Personne non definie !");
             embarquer(currentPerson);
             showMenu();
             display();
             break;
         case 'd':
+            if(!currentPerson) throw std::invalid_argument("Personne non definie !");
             debarquer(currentPerson);
             showMenu();
             display();
@@ -104,15 +108,18 @@ void Controller::nextTurn() {
             showMenu();
             break;
         default:
-            cout << "Commande inconnu !" << endl;
-            turn--;
-            break;
+            throw std::invalid_argument("Commande inconnue !");
     }
 }
 
 void Controller::run() {
     while (true){
-        nextTurn();
+        try {
+            nextTurn();
+        }catch(std::exception& e) {
+            cerr << e.what() << endl;
+            turn--;
+        }
         if(finished() or ended)
             break;
     }
@@ -123,9 +130,9 @@ void Controller::run() {
 }
 
 void Controller::embarquer(Person *p) {
-    if(boat->contain(p))
+    if(boat->contains(p))
          cout << p->getName() << " est deja dans le bateau !" << endl;
-    else if (!boat->getSide()->contain(p))
+    else if (!boat->getSide()->contains(p))
         cout << p->getName() << " n'est pas sur la berge !" << endl;
     else{
         boat->getSide()->removePerson(p);
@@ -134,7 +141,7 @@ void Controller::embarquer(Person *p) {
 }
 
 void Controller::debarquer(Person *p) {
-    if(!boat->contain(p))
+    if(!boat->contains(p))
         cout << p->getName() << " n'est pas dans le bateau !" << endl;
     else{
         boat->removePerson(p);
@@ -150,13 +157,13 @@ void Controller::moveBoat() {
         boat->setSide(rightBank);
 }
 
-Person *Controller::getPersonByName(string name) {
+Person *Controller::getPersonByName(const string &name) {
     for(Person* p : listInit){
         if(p->getName() == name) {
             return p;
         }
     }
-    return nullptr;
+    throw std::invalid_argument("Personne inconnue !");
 }
 
 bool Controller::finished() {
@@ -175,7 +182,7 @@ void Controller::reInit() {
     cout << "Partie reinitialisee !" << endl << endl;
 }
 
-bool Controller::checkCommand(const string &toParse, char &move, string &person) {
+tuple<char, string> Controller::checkCommand(const string &toParse) {
     //regex r("([pedrmqh] [^\\s]+)|([pedrmqh])");
 //    if(regex_match(toParse,r)){
 //        move = toParse.at(0);
@@ -187,16 +194,17 @@ bool Controller::checkCommand(const string &toParse, char &move, string &person)
 //        return false;
 //    }
 
-    if(toParse.size() < 2){
-        move = toParse.at(0);
-        return true;
+    // Throw exception if empty entry
+    if(toParse == "") {
+        throw std::invalid_argument("Saisie vide !");
     }
-    else if(toParse.at(1) == ' '){
-        move = toParse.at(0);
-        person = toParse.substr(2);
-        return true;
+
+    if(toParse.size() < 2) {
+        return make_tuple(toParse.at(0), "");
+    } else if(toParse.at(1) == ' ') {
+        return make_tuple(toParse.at(0), toParse.substr(2));
+    } else {
+        throw std::invalid_argument("Erreur de saisie !");
     }
-    else
-        return false;
 }
 

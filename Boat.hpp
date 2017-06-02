@@ -18,17 +18,17 @@ public:
      * Boat constructor
      * @param name the name of the container
      */
-    Boat(string name);
+    Boat(const string &name);
 
     /**
      * Gets boat's current river side
-     * @return the bank where the boat is
+     * @return a pointer on the bank where the boat is
      */
     Bank* getSide();
 
     /**
      * Sets the boat's current bank
-     * @param newSide the new bank where the boat will be
+     * @param newSide a pointer on the new bank where the boat will be
      */
     void setSide(Bank* newSide);
 
