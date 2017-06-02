@@ -83,16 +83,27 @@ void Controller::nextTurn() {
         case 'e':
             if(!currentPerson) throw std::invalid_argument("Personne non definie !");
             embarquer(currentPerson);
+            if(!(boat->getSide()->checkConditions() && boat->checkConditions())) {
+                debarquer(currentPerson);
+            }
             showMenu();
             display();
             break;
         case 'd':
             if(!currentPerson) throw std::invalid_argument("Personne non definie !");
             debarquer(currentPerson);
+            if(!(boat->getSide()->checkConditions() && boat->checkConditions())) {
+                embarquer(currentPerson);
+            }
             showMenu();
             display();
             break;
         case 'm':
+            if(!boat->canMove()) {
+                cout << "Pas de pilote à bord !" << endl;
+                turn--;
+                return;
+            }
             moveBoat();
             showMenu();
             display();

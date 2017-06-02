@@ -5,8 +5,6 @@
 #ifndef LABO16_CONTROLLER_HPP
 #define LABO16_CONTROLLER_HPP
 
-
-
 #include <iostream>
 #include <list>
 #include <string>
@@ -86,6 +84,8 @@ private:
      * Throw exception if the string is > 2 but the second charactere isn't a space char.
      */
     std::tuple<char, string> checkCommand(const string &toParse);
+
+
 
 public:
     Controller(initializer_list<Person*> p);

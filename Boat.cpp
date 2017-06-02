@@ -17,7 +17,13 @@ void Boat::setSide(Bank* newSide) {
 
 void Boat::displayPersons() {
     cout << "< ";
-    for (list<Person*>::iterator it = l.begin(); it != l.end(); it++)
-        cout <<  (**it).getName() << " ";
+    for (Person* p : l)
+        cout <<  p->getName() << " ";
     cout << ">" << endl;
+}
+
+bool Boat::canMove() {
+    for(Person* p : l)
+        if(p->canDrive()) return true;
+    return false;
 }
